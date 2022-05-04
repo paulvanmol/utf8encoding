@@ -1,11 +1,14 @@
-﻿%let path=C:\workshop\UTF8Encoding\orion;
+/* %let path=C:\workshop\UTF8Encoding\orion; */
+%let path=/greenmonthly-export/ssemonthly/homes/paul.van.mol@sas.com/utf8encoding/orion;
 options dlcreatedir nofmterr; 
-libname ordet "&path\utf8_ordetail"; 
-libname orfmt "&path\utf8_orfmt"; 
+libname ordet "&path/utf8_ordetail" ; 
+libname orfmt "&path/utf8_orfmt"; 
 
-proc cimport library=ordet file="&path\_ctrl\ordet.xpt" extendvar=1.5 extendformat=yes; 
+filename ctrldet zip "&path/_ctrl/_ctrl.zip" member="ordet.xpt"; 
+proc cimport library=ordet file=ctrldet extendvar=1.5 extendformat=yes; 
 run; 
-proc cimport library=orfmt file="&path\_ctrl\orfmt.xpt" extendvar=1.5; 
+filename ctrlfmt zip "&path/_ctrl/_ctrl.zip" member="orfmt.xpt"; 
+proc cimport library=orfmt file=ctrlfmt extendvar=1.5; 
 run; 
 
 proc print data=ordet.customer(obs=20); 

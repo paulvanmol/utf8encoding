@@ -3,7 +3,9 @@
  *
  */
 data code1;
-  infile "&localProjectPath/sascode/example_ansi.sas" truncover;
+  infile "&localProjectPath/sascode/example_ansi.sas" truncover 
+	/*encoding=wlatin1 */ 
+;
   input @1 codeLine $1024.;
 run;
 

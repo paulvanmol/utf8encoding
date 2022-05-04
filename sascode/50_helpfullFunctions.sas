@@ -7,7 +7,7 @@
  */
 data _null_;
   length in1 out1 $30;
-  in1 = unicodec("1€23");
+  in1 = unicodec("1â‚¬23");
   out1=unicode(in1);
   put _all_;
 run;

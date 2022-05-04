@@ -2,7 +2,7 @@
  * code must be run in a unicode session
  */
 %put NOTE: %sysfunc(getoption(encoding, keyword));
-%let text = 1€23;
+%let text = 1â‚¬23;
 
 %put NOTE: *%substr(&text, 2, 1)*;
 

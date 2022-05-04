@@ -9,7 +9,7 @@ data have;
   length 
     specialChar $ 32
   ;
-  specialChar = "1€234";
+  specialChar = "1â‚¬234";
 run;
 
 proc contents data=have;

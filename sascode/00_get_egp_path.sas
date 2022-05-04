@@ -9,8 +9,9 @@
  * in case you run code not through EG
  * yourPath: location where you stored all examples 
  * 
- * %let localProjectPath = yourPath ;
- */
+*/
+ %let localProjectPath = /greenmonthly-export/ssemonthly/homes/paul.van.mol@sas.com/utf8encoding ;
+ 
 
 %put &=localProjectPath;
 

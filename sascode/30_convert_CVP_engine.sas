@@ -7,7 +7,8 @@ options
   dlcreatedir
 ;
 
-data have;
+data have ;
+  length lastname $7 firstname $5; 
   text = "Die süße Hündin läuft in die Höhle des Bären";
   lastname = "Müller";
   firstname = "René";
@@ -19,7 +20,7 @@ data have;
 run;
 
 libname xutf8 "%sysfunc(pathname(work))/sas_utf8" outencoding=utf8 ;
-libname xcvp  "%sysfunc(pathname(work))" cvpmultiplier=1.5;
+libname xcvp  "%sysfunc(pathname(work))" cvpmultiplier=1.5 ;
 
 data xutf8.want3;
   set xcvp.have;

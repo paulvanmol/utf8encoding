@@ -1,5 +1,5 @@
-﻿/*
- * DO NOT RUN
+/*
+ * Run in UTF8 Session (9.4 or Viya)
  * data already created
  * MUST be run with SAS running in UTF-8
  * otherwise, special chars can not be processed

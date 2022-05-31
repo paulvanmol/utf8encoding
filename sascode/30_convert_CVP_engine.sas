@@ -9,9 +9,9 @@ options
 
 data have ;
   length lastname $7 firstname $5; 
-  text = "Die süße Hündin läuft in die Höhle des Bären";
-  lastname = "Müller";
-  firstname = "René";
+  text = "Die sÃ¼ÃŸe HÃ¼ndin lÃ¤uft in die HÃ¶hle des BÃ¤ren";
+  lastname = "MÃ¼ller";
+  firstname = "RenÃ©";
 
   format
     text $44.

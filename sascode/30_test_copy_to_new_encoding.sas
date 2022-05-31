@@ -1,8 +1,8 @@
 /* encoding should be wlatin1 */
 data have;
-  text = "Die süße Hündin läuft in die Höhle des Bären";
-  lastname = "Müller";
-  firstName = "René";
+  text = "Die sÃ¼ÃŸe HÃ¼ndin lÃ¤uft in die HÃ¶hle des BÃ¤ren";
+  lastname = "MÃ¼ller";
+  firstName = "RenÃ©";
 run;
 
 proc contents data=have;

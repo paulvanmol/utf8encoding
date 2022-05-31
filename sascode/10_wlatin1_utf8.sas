@@ -15,7 +15,7 @@ data _null_;
   putlog "NOTE: using " sessionEncoding=;
 
   putlog @1 "name" @10 "name_u8";
-  do name = "MÜLLER", "1€2";
+  do name = "MÃœLLER", "1â‚¬2";
     name_u8 = unicodec(name,  "UTF8");
     putlog @1 name @10 name $hex32.;
     putlog @1 name_u8 @10 name_u8 $hex32.;

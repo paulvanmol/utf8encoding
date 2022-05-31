@@ -9,5 +9,6 @@ run;
 %printit(dsn=sashelp.class, obs=5)
 
 /*Autocall Macros are recompiled*/
-options mautosource sasautos=(sasautos "c:\workshop\lwmc1v2\autocall"); 
+options mautosource 
+sasautos=(sasautos "c:\workshop\lwmc1v2\autocall"); 
 %printtable(dsn=sashelp.cars);
